@@ -36,35 +36,6 @@ Users can paste any Wikipedia URL, generate a quiz instantly, and revisit previo
 
 ## 📂 Project Structure
 
-wikiquiz
-├─ .gitignore
-├─ README.md
-├─ backend
-│  ├─ README.md
-│  ├─ app
-│  │  ├─ config.py
-│  │  ├─ database.py
-│  │  ├─ main.py
-│  │  ├─ models.py
-│  │  ├─ prompts
-│  │  │  ├─ quiz_prompt.txt
-│  │  │  └─ related_prompt.txt
-│  │  ├─ routers
-│  │  │  └─ quiz.py
-│  │  ├─ schemas.py
-│  │  └─ services
-│  │     ├─ cache.py
-│  │     ├─ gemini25_llm.py
-│  │     ├─ llm.py
-│  │     └─ scraper.py
-│  └─ requirements.txt
-├─ frontend
-│  ├─ app.js
-│  ├─ index.html
-│  └─ styles.css
-└─ sample_data
-   ├─ alan_turing.json
-   └─ urls.txt 
 
 ## ⚙️ Prerequisites
 

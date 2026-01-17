@@ -1,0 +1,6 @@
+Based only on the content below, suggest 3–5 closely related Wikipedia article titles.
+
+Return JSON array ONLY.
+
+TEXT:
+{text}

@@ -1,0 +1,19 @@
+{
+  "title": "Alan Turing",
+  "sections": ["Early life", "World War II", "Legacy"],
+  "quiz": [
+    {
+      "question": "What did Alan Turing contribute during World War II?",
+      "options": [
+        "Radar development",
+        "Breaking Enigma",
+        "Jet engines",
+        "Nuclear research"
+      ],
+      "answer": "Breaking Enigma",
+      "difficulty": "medium",
+      "explanation": "Described in World War II section",
+      "section": "World War II"
+    }
+  ]
+}

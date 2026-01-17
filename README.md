@@ -1,0 +1,174 @@
+# 🧠 WikiQuiz App
+
+WikiQuiz is a full-stack web application that generates intelligent, interactive quizzes from Wikipedia articles using AI.  
+Users can paste any Wikipedia URL, generate a quiz instantly, and revisit previously generated quizzes from history.
+
+---
+
+## 🚀 Features
+
+- 🔗 Generate quizzes from any Wikipedia article
+- 🤖 AI-powered quiz & related topics generation (Gemini 2.5 Flash)
+- 💾 Persistent quiz storage using PostgreSQL
+- ⚡ Smart caching (prevents duplicate generation)
+- 🕘 Quiz history with click-to-reopen functionality
+- 🎨 Clean, modern, responsive UI
+- 🧩 Modular, scalable backend architecture
+
+---
+
+## 🏗️ Tech Stack
+
+### Backend
+- **FastAPI**
+- **SQLAlchemy**
+- **PostgreSQL**
+- **LangChain**
+- **Google Gemini 2.5 Flash**
+- **Uvicorn**
+
+### Frontend
+- **HTML**
+- **CSS**
+- **Vanilla JavaScript (Fetch API)**
+
+---
+
+## 📂 Project Structure
+
+
+
+
+
+
+
+
+---
+
+## ⚙️ Prerequisites
+
+- Python **3.10+**
+- PostgreSQL **14+**
+- Google Gemini API key
+- Git
+
+---
+
+## 🔑 Environment Variables
+
+Create a `.env` file inside `backend/`:
+
+
+DATABASE_URL=postgresql://username:password@localhost:5432/wikiquiz
+GEMINI_API_KEY=your_gemini_api_key_here
+
+
+---
+
+## 🧪 Backend Setup
+
+### 1️⃣ Navigate to backend
+```bash
+cd backend
+
+2️⃣ Create virtual environment
+
+python -m venv venv
+source venv/bin/activate   # macOS/Linux
+
+3️⃣ Install dependencies
+
+pip install -r requirements.txt
+
+4️⃣ Start PostgreSQL
+
+brew services start postgresql@14
+
+5️⃣ Create database
+
+createdb wikiquiz
+
+6️⃣ Run backend server
+
+python -m uvicorn app.main:app --reload
+
+Backend will be available at:
+
+http://127.0.0.1:8000
+
+
+🌐 Frontend Setup
+
+1️⃣ Navigate to frontend
+
+cd frontend
+
+2️⃣ Open in browser
+
+open index.html
+
+⚠️ Make sure backend is running before clicking Generate
+
+
+API Endpoints
+
+Generate Quiz
+
+POST /generate?url=<wikipedia_url>
+
+Quiz History
+
+GET /history
+
+Fetch Quiz by ID
+
+GET /quiz/{quiz_id}
+
+
+🧠 How It Works
+
+1. User submits a Wikipedia URL
+
+2. Wikipedia content is scraped
+
+3. Content is sent to Gemini via LangChain
+
+4. AI generates:
+
+   -> Multiple-choice quiz
+
+   -> Related topics
+
+5. Quiz is stored in PostgreSQL
+
+6. Cached quizzes are reused
+
+7. User can revisit quizzes from history
+
+
+🛡️ Error Handling
+
+Duplicate quiz URLs are prevented
+
+Cached results are returned automatically
+
+Graceful API and UI error handling
+
+Backend rollback on failure
+
+
+🎯 Future Enhancements
+
+User authentication
+
+Quiz scoring & analytics
+
+Timed quizzes
+
+React frontend
+
+Deployment on Vercel + Render
+
+RAG-based explanations
+
+Bookmark & share quizzes

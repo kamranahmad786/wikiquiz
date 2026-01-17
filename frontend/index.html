@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>WikiQuiz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="app">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>WikiQuiz</h2>
+      <button onclick="tab(1)" class="nav-btn active">Generate Quiz</button>
+      <button onclick="tab(2)" class="nav-btn">Quiz History</button>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content">
+
+      <!-- Generate -->
+      <section id="tab1" class="page">
+        <h1>Generate Quiz</h1>
+        <p>Create intelligent quizzes from Wikipedia articles</p>
+
+        <div class="input-bar">
+          <input
+            id="url"
+            placeholder="https://en.wikipedia.org/wiki/Artificial_intelligence"
+          />
+          <button onclick="generate()">Generate</button>
+        </div>
+
+        <div id="quiz" class="quiz-list"></div>
+      </section>
+
+      <!-- History -->
+      <section id="tab2" class="page" style="display:none">
+        <h1>Previously Generated Quizzes</h1>
+
+        <table class="history-table">
+          <tbody id="history"></tbody>
+        </table>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -36,6 +36,7 @@ Users can paste any Wikipedia URL, generate a quiz instantly, and revisit previo
 
 ## 📂 Project Structure
 
+```
 wikiquiz/
 ├── .gitignore
 ├── README.md
@@ -65,9 +66,7 @@ wikiquiz/
 └── sample_data/
     ├── alan_turing.json
     └── urls.txt
-
-
-
+```
 ## ⚙️ Prerequisites
 
 - Python **3.10+**

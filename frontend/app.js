@@ -1,7 +1,7 @@
 /* ===============================
    CONFIG
 ================================ */
-const API = "https://wikiquiz-ncdk.onrender.com"; 
+const API = "https://wikiquiz-ncdk.onrender.com".replace(/\/$/, "");; 
 
 const quizDiv = document.getElementById("quiz");
 const historyTable = document.getElementById("history");

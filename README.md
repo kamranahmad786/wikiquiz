@@ -170,27 +170,25 @@ GET /quiz/{quiz_id}
 
 🛡️ Error Handling
 
-Duplicate quiz URLs are prevented
+1. Duplicate quiz URLs are prevented
 
-Cached results are returned automatically
+2. Cached results are returned automatically
 
-Graceful API and UI error handling
+3. Graceful API and UI error handling
 
-Backend rollback on failure
+4. Backend rollback on failure
 
 
 🎯 Future Enhancements
 
-User authentication
+1. User authentication
 
-Quiz scoring & analytics
+2. Quiz scoring & analytics
 
-Timed quizzes
+3. Timed quizzes
 
-React frontend
+4. React frontend
 
-Deployment on Vercel + Render
+5. RAG-based explanations
 
-RAG-based explanations
-
-Bookmark & share quizzes
+6. Bookmark & share quizzes

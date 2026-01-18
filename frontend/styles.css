@@ -153,3 +153,32 @@ body {
 .history-table button:hover {
   background: #1d4ed8;
 }
+
+.history-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 14px 18px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.history-card button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.history-card button:hover {
+  background: #1e40af;
+}
+
+.answer {
+  margin-top: 8px;
+  color: #2563eb;
+  font-weight: 600;
+}
